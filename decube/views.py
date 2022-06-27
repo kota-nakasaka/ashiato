@@ -13,9 +13,10 @@ class IndexView(View):
     def get(self, request, *args, **kwargs):
         url = request.build_absolute_uri()
         qs = urllib.parse.urlparse(url).query
+        id = qs[-4:]
 
         subject = "【あしあと】配布したQRコードから貴社サイトにアクセスがありました"
-        message = qs
+        message = id
         from_email = "web.knakasaka@gmail.com"
         recipient_list = ["web.decube@gmail.com"]
         try:
