@@ -16,7 +16,7 @@ class IndexView(View):
 
         subject = "【あしあと】配布したQRコードから貴社サイトにアクセスがありました"
         message = qs
-        from_email = "web.knakasaka@gmail.com"
+        from_email = "decube.ashiato@gmail.com"
         recipient_list = ["kota_nakasaka@de-cube.co.jp"]
         try:
             send_mail(subject, message, from_email, recipient_list)
