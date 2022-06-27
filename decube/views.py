@@ -15,7 +15,7 @@ class IndexView(View):
         qs = urllib.parse.urlparse(url).query
         id = qs[-4:]
 
-        subject = "【あしあと】配布したQRコードから貴社サイトにアクセスがありました"
+        subject = "【あしあと】貴社サイトにアクセスがありました"
         message = id
         from_email = "web.knakasaka@gmail.com"
         recipient_list = ["web.decube@gmail.com"]
