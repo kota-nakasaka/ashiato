@@ -17,7 +17,7 @@ class IndexView(View):
 
         subject = "【あしあと】貴社サイトにアクセスがありました"
         message = id
-        from_email = "web.knakasaka@gmail.com"
+        from_email = "decube.ashiato@gmail.com"
         recipient_list = ["kota_nakasaka@de-cube.co.jp"]
         try:
             send_mail(subject, message, from_email, recipient_list)
