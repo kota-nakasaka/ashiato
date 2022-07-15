@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('decube/', include('decube.urls')),
     path('webchallenge/', include('webchallenge.urls')),
+    path('rakucad/', include('rakucad.urls')),
 ]
